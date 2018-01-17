@@ -1,5 +1,5 @@
 <scenario>
-  <name>Single Male Mr.scenario</name>
+  <name>Married Female Mrs.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -13,7 +13,7 @@
         </field-data>
         <field-data>
           <name>maritalStatus</name>
-          <value>Single</value>
+          <value>Married</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -40,7 +40,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>salutation</fieldName>
-          <expected>Ms.</expected>
+          <expected>Mrs.</expected>
           <actualResult>Ms.</actualResult>
           <successResult>false</successResult>
           <explanation>[GreetingResponse] field [salutation] was [Ms.] expected [Mr.].</explanation>
