@@ -1,14 +1,31 @@
 <scenario>
-  <name>Good Afternoon Greeting.scenario</name>
+  <name>Married Male Mr.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
+    <fact-data>
+      <type>Customer</type>
+      <fieldData>
+        <field-data>
+          <name>gender</name>
+          <value>Male</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>maritalStatus</name>
+          <value>Single</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>customer</name>
+      <isModify>false</isModify>
+    </fact-data>
     <fact-data>
       <type>GreetingRequest</type>
       <fieldData>
         <field-data>
           <name>currentHour</name>
-          <value>15</value>
+          <value>8</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -22,16 +39,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>9</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>3</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>greeting</fieldName>
-          <expected>Good Afternoon</expected>
-          <successResult>true</successResult>
-          <explanation>[GreetingResponse] field [greeting] was [Good morning].</explanation>
+          <fieldName>salutation</fieldName>
+          <expected>Mr.</expected>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [GreetingResponse] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -40,7 +58,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-02-02 15:53:34.109 UTC</lastRunResult>
+  <lastRunResult>2018-01-16 19:52:07.814 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myteam.customer_greeting</packageName>

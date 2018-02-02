@@ -15,8 +15,14 @@
       <name>request</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>GreetingResponse</type>
+      <fieldData/>
+      <name>response</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>11</executionTimeResult>
+      <executionTimeResult>12</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -35,7 +41,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-01-15 19:14:49.347 UTC</lastRunResult>
+  <lastRunResult>2018-02-02 15:57:55.401 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myteam.customer_greeting</packageName>

@@ -15,8 +15,14 @@
       <name>request</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>GreetingResponse</type>
+      <fieldData/>
+      <name>response</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>11</executionTimeResult>
+      <executionTimeResult>9</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -24,9 +30,8 @@
         <expect-field>
           <fieldName>greeting</fieldName>
           <expected>Good morning</expected>
-          <actualResult>Good morning</actualResult>
-          <successResult>false</successResult>
-          <explanation>[GreetingResponse] field [greeting] was [Good morning] expected [Good Morning].</explanation>
+          <successResult>true</successResult>
+          <explanation>[GreetingResponse] field [greeting] was [Good morning].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -35,7 +40,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-01-15 18:07:30.842 UTC</lastRunResult>
+  <lastRunResult>2018-02-02 15:53:34.109 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myteam.customer_greeting</packageName>
