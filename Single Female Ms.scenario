@@ -1,5 +1,5 @@
 <scenario>
-  <name>Single Male Mr.scenario</name>
+  <name>Single Female Ms.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -30,6 +30,12 @@
         </field-data>
       </fieldData>
       <name>request</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>GreetingResponse</type>
+      <fieldData/>
+      <name>response</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>

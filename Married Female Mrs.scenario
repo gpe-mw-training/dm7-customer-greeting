@@ -32,18 +32,24 @@
       <name>request</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>GreetingResponse</type>
+      <fieldData/>
+      <name>response</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>80</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>37</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>salutation</fieldName>
           <expected>Mrs.</expected>
-          <actualResult>Ms.</actualResult>
+          <actualResult>No match</actualResult>
           <successResult>false</successResult>
-          <explanation>[GreetingResponse] field [salutation] was [Ms.] expected [Mr.].</explanation>
+          <explanation>Fact of type [GreetingResponse] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -52,7 +58,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-01-16 19:54:19.430 UTC</lastRunResult>
+  <lastRunResult>2018-02-02 16:04:42.369 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myteam.customer_greeting</packageName>

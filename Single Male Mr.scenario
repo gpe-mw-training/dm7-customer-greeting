@@ -32,6 +32,12 @@
       <name>request</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>GreetingResponse</type>
+      <fieldData/>
+      <name>response</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
       <executionTimeResult>20</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
