@@ -1,5 +1,5 @@
 <scenario>
-  <name>Married Female Mrs.scenario</name>
+  <name>married-male-mr.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,12 +8,12 @@
       <fieldData>
         <field-data>
           <name>gender</name>
-          <value>Female</value>
+          <value>Male</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>maritalStatus</name>
-          <value>Married</value>
+          <value>Single</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -32,18 +32,24 @@
       <name>request</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>GreetingResponse</type>
+      <fieldData/>
+      <name>response</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>80</executionTimeResult>
+      <executionTimeResult>11</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>salutation</fieldName>
-          <expected>Mrs.</expected>
-          <actualResult>Ms.</actualResult>
-          <successResult>false</successResult>
-          <explanation>[GreetingResponse] field [salutation] was [Ms.] expected [Mr.].</explanation>
+          <expected>Mr.</expected>
+          <actualResult>No match</actualResult>
+          <successResult>true</successResult>
+          <explanation>[GreetingResponse] field [salutation] was [Mr.].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -52,10 +58,10 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-01-16 19:54:19.430 UTC</lastRunResult>
+  <lastRunResult>2018-12-21 19:15:54.563 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
-  <packageName>com.myteam.customer_greeting</packageName>
+  <packageName>com.myspace.customer_greeting</packageName>
   <imports>
     <imports/>
   </imports>

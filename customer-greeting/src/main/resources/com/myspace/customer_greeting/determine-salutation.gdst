@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>Determine Greeting</tableName>
+  <tableName>Determine Salutation</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>50</width>
@@ -12,8 +12,8 @@
   <attributeCols/>
   <conditionPatterns>
     <Pattern52>
-      <factType>GreetingRequest</factType>
-      <boundName>request</boundName>
+      <factType>Customer</factType>
+      <boundName>f1</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -24,11 +24,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Before Hour</header>
+          <header>Gender</header>
           <constraintValueType>1</constraintValueType>
-          <factField>currentHour</factField>
-          <fieldType>Integer</fieldType>
-          <operator>&lt;=</operator>
+          <factField>gender</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -39,11 +39,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>After Hour</header>
+          <header>Marital Status</header>
           <constraintValueType>1</constraintValueType>
-          <factField>currentHour</factField>
-          <fieldType>Integer</fieldType>
-          <operator>&gt;</operator>
+          <factField>maritalStatus</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -53,7 +53,7 @@
     </Pattern52>
     <Pattern52>
       <factType>GreetingResponse</factType>
-      <boundName>response</boundName>
+      <boundName>f2</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -86,9 +86,9 @@
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
       <width>100</width>
-      <header>Greeting</header>
-      <boundName>response</boundName>
-      <factField>greeting</factField>
+      <header>Salutation</header>
+      <boundName>f2</boundName>
+      <factField>salutation</factField>
       <type>String</type>
       <update>false</update>
     </set-field-col52>
@@ -123,7 +123,7 @@
   <imports>
     <imports/>
   </imports>
-  <packageName>com.myteam.customer_greeting</packageName>
+  <packageName>com.myspace.customer_greeting</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
@@ -135,20 +135,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good Morning</valueString>
+        <valueString>Mr</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">11</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <valueString>Male</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -158,7 +156,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good morning</valueString>
+        <valueString>Mr.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -171,20 +169,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good Afternoon</valueString>
+        <valueString>Mrs</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">19</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <valueString>Female</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">11</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <valueString>Married</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -194,7 +190,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good Afternoon</valueString>
+        <valueString>Mrs.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -207,20 +203,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good Evening</valueString>
+        <valueString>Ms</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">21</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <valueString>Female</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">19</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <valueString>Single</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -230,43 +224,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good Evening</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">4</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Good Night</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">23</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">21</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Good Night</valueString>
+        <valueString>Ms.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

@@ -1,5 +1,5 @@
 <scenario>
-  <name>Married Female Mrs.scenario</name>
+  <name>single-male-mr.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -39,17 +39,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>37</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>salutation</fieldName>
           <expected>Mrs.</expected>
-          <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [GreetingResponse] was not found in the results.</explanation>
+          <actualResult>Ms.</actualResult>
+          <successResult>true</successResult>
+          <explanation>[GreetingResponse] field [salutation] was [Mrs.].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -58,10 +58,10 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-02-02 16:04:42.369 UTC</lastRunResult>
+  <lastRunResult>2018-12-21 19:16:58.62 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
-  <packageName>com.myteam.customer_greeting</packageName>
+  <packageName>com.myspace.customer_greeting</packageName>
   <imports>
     <imports/>
   </imports>

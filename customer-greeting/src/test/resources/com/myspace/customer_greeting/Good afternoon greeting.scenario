@@ -1,5 +1,5 @@
 <scenario>
-  <name>Good Evening Greeting.scenario</name>
+  <name>Good afternoon greeting.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>currentHour</name>
-          <value>20</value>
+          <value>13</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -22,17 +22,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>12</executionTimeResult>
+      <executionTimeResult>9</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>greeting</fieldName>
-          <expected>Good Evening</expected>
-          <actualResult>Good Evening</actualResult>
-          <successResult>false</successResult>
-          <explanation>[GreetingResponse] field [greeting] was [Good Evening] expected [Good evening].</explanation>
+          <expected>Good Afternoon</expected>
+          <actualResult>Good Morning</actualResult>
+          <successResult>true</successResult>
+          <explanation>[GreetingResponse] field [greeting] was [Good Afternoon].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -41,10 +41,10 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-02-02 15:57:55.401 UTC</lastRunResult>
+  <lastRunResult>2018-12-21 15:29:05.607 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
-  <packageName>com.myteam.customer_greeting</packageName>
+  <packageName>com.myspace.customer_greeting</packageName>
   <imports>
     <imports/>
   </imports>

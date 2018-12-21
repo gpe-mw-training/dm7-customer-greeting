@@ -1,5 +1,5 @@
 <scenario>
-  <name>Good Morning Greeting.scenario</name>
+  <name>Good evening greeting.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>currentHour</name>
-          <value>8</value>
+          <value>20</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -29,9 +29,10 @@
       <fieldValues>
         <expect-field>
           <fieldName>greeting</fieldName>
-          <expected>Good morning</expected>
+          <expected>Good Evening</expected>
+          <actualResult>Good Evening</actualResult>
           <successResult>true</successResult>
-          <explanation>[GreetingResponse] field [greeting] was [Good morning].</explanation>
+          <explanation>[GreetingResponse] field [greeting] was [Good Evening].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -40,10 +41,10 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-02-02 15:53:34.109 UTC</lastRunResult>
+  <lastRunResult>2018-12-21 15:29:45.850 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
-  <packageName>com.myteam.customer_greeting</packageName>
+  <packageName>com.myspace.customer_greeting</packageName>
   <imports>
     <imports/>
   </imports>
