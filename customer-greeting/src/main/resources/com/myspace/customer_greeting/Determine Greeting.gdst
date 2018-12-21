@@ -13,7 +13,7 @@
   <conditionPatterns>
     <Pattern52>
       <factType>GreetingRequest</factType>
-      <boundName>f1</boundName>
+      <boundName>request</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -51,9 +51,34 @@
         <parameters/>
       </window>
     </Pattern52>
+    <Pattern52>
+      <factType>GreetingResponse</factType>
+      <boundName>response</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>response</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>this</factField>
+          <fieldType>this</fieldType>
+          <operator>!= null</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <insert-fact-column52>
+    <set-field-col52>
       <typedDefaultValue>
         <valueString></valueString>
         <dataType>STRING</dataType>
@@ -61,13 +86,12 @@
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
       <width>100</width>
-      <header>greeting</header>
-      <factType>GreetingResponse</factType>
-      <boundName>f2</boundName>
+      <header>Greeting</header>
+      <boundName>response</boundName>
       <factField>greeting</factField>
       <type>String</type>
-      <isInsertLogical>false</isInsertLogical>
-    </insert-fact-column52>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -99,7 +123,7 @@
   <imports>
     <imports/>
   </imports>
-  <packageName>com.myteam.customer_greeting</packageName>
+  <packageName>com.myspace.customer_greeting</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
@@ -128,7 +152,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Good morning</valueString>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Good Morning</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -155,6 +185,12 @@
         <valueNumeric class="int">11</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -188,6 +224,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Good Evening</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -215,6 +257,12 @@
         <valueNumeric class="int">21</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
